@@ -41,6 +41,10 @@ public class TestHarness {
 		addTest("set.2010-08-29.mm", true, null, bigfiles);
 		addTest("set.mm", true, null, bigfiles);
 		addTest("set-dist.mm", false, "Test for missing $d", basic);
+		addTest("lof.mm", true, "Test for empty substitution", basic);
+		addTest("lofmathbox.mm", true, null, basic);
+		addTest("lofset.mm", true, null, basic);
+		addTest("set(lof).mm", true, null, bigfiles);
 
 		Category all = addCategory("all tests");
 		for (Test t : tests)
