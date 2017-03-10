@@ -40,6 +40,7 @@ public class TestHarness {
 		addTest("ql.mm", true, null, bigfiles);
 		addTest("set.2010-08-29.mm", true, null, bigfiles);
 		addTest("set.mm", true, null, bigfiles);
+		addTest("set-dist.mm", false, "Test for missing $d", basic);
 
 		Category all = addCategory("all tests");
 		for (Test t : tests)
