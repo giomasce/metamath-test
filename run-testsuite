@@ -62,8 +62,8 @@ pass peano-fixed.mm
 pass ql.mm
 pass set.2010-08-29.mm
 pass set.mm
-fail set-dist.mm
-pass lof.mm
+fail set-dist.mm 'Test for missing $d'
+pass lof.mm "Test for empty substitution"
 pass lofmathbox.mm
 pass lofset.mm
 pass set\(lof\).mm
